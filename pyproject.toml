@@ -1,0 +1,19 @@
+[project]
+name = "stacking-blending"
+version = "0.1.0"
+description = "Stacked Generalization: Stacking и Blending - реализация и эксперименты"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.1",
+    "scikit-learn>=1.4",
+    "matplotlib>=3.8",
+    "jupyterlab>=4.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
